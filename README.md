@@ -2,4 +2,8 @@
 
 ### Create a portfolio web-page
 
-I have create a responsive portofolio site using Bootstrap CSS inside folder called Challenge-1.
+I have created a responsive portfolio site using Bootstrap CSS inside a folder called Challenge-1.
+
+###### Website Link Below:
+
+https://nosineb.github.io/benison-tdotcom/
