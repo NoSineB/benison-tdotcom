@@ -1,0 +1,223 @@
+body{
+    background-color: rgb(19, 19, 19);
+}
+
+.h4{
+    background: linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.h4>span{
+    -webkit-text-fill-color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: rgb(197, 196, 196);
+}
+
+.mynav{
+    flex-direction: row;
+}
+
+#mynav{
+    background-color: rgb(19, 19, 19);
+}
+
+#hero, #aboutUs, #skillBar, #contactMe{
+    margin-bottom: 7%;
+}
+
+
+.contact{
+    background: linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
+    border: none;
+    color: white;
+}
+
+
+  .marquee {
+    background: linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
+    color: white;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 5s linear infinite;
+  }
+  
+  .marquee2 span {
+    animation-delay: 2.5s;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+.contact:hover{
+    color: rgb(197, 196, 196);
+}
+
+.h1{
+    background: linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
+	-webkit-text-fill-color: transparent;
+    background-clip: text;
+	-webkit-background-clip: text;
+    font-weight: 600;
+}
+.h2{
+    color: white;
+    font-weight: 500;
+}
+
+.h3{
+    color: white;
+    font-weight: 300;
+}
+
+.para{
+    color: white;
+}
+
+.more{
+    color: white;
+    border: solid 1px transparent;
+    border-radius: 20px;
+    border-image: linear-gradient(90deg,#D78B43 2.32%, #D96554 50.41%, #A868DF 97.78% ) 1;
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    -webkit-background-clip: content-box, border-box;
+}
+
+.more:hover{
+    background: rgb(19, 19, 19);
+}
+
+.more>span{
+    font-size: x-large;
+}
+
+
+.my-img{
+    background: linear-gradient(90deg,#D78B43 2.32%, #D96554 50.41%, #A868DF 97.78% );
+}
+
+.box{
+    height: 250px;
+    background-color: #212121;
+    color: white;
+    transition: 400ms;
+}
+
+.box:hover{
+    border-bottom: 10px solid;
+    border-image: linear-gradient(90deg,#D78B43 2.32%, #D96554 50.41%, #A868DF 97.78% ) 8;
+}
+
+.main-input{
+    background-color: rgb(19, 19, 19);
+    border: none;
+    border-radius: 0%;
+    border-bottom: white 2px solid;
+}
+
+.main-input::placeholder{
+    color: white;
+}
+
+.main-input:focus{
+    background-color: rgb(19, 19, 19);
+    border: none;
+    color: white;
+    border-radius: 0%;
+    border-bottom: white 2px solid;
+}
+
+.main-input:active{
+    border: none;
+}
+
+#textArea{
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 0.6rem;
+    margin-top: 1.5rem;
+    border-radius: 0%;
+    border: white 2px solid;
+}
+
+#textArea:active{
+    border: none;
+}
+
+#textArea:focus{
+    background-color: rgb(19, 19, 19);
+    border: none;
+    color: white;
+    border-radius: 0%;
+    border-bottom: white 2px solid;
+}
+
+#texArea::placeholder{
+    color: white;
+}
+
+.icons80{width: 80px;}.icons120{width: 120px}.icons100{width: 100px;}.icons90{width: 90px;}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.text-roll{
+    background: linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
+    color: white;
+}
+
+
+@media(max-width: 768px) {
+    .mynav{
+        display: none;
+    }
+    h4{
+        text-align: center;
+    }
+    .navbar>.container{
+        justify-content: center;
+    }
+    .order{
+        order: 2;
+    }
+    .contact{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .more{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .text{
+        display: none;
+    }
+}
+
+@media(min-width: 1400px){
+    .break{
+        display: none;
+    }
+}
