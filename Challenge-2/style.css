@@ -40,35 +40,6 @@ body{
     color: white;
 }
 
-
-  .marquee {
-    background: linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
-    color: white;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    position: absolute;
-  }
-  
-  .marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 5s linear infinite;
-  }
-  
-  .marquee2 span {
-    animation-delay: 2.5s;
-  }
-  
-  @keyframes marquee {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
-  }
-
 .contact:hover{
     color: rgb(197, 196, 196);
 }
@@ -93,25 +64,6 @@ body{
 .para{
     color: white;
 }
-
-.more{
-    color: white;
-    border: solid 1px transparent;
-    border-radius: 20px;
-    border-image: linear-gradient(90deg,#D78B43 2.32%, #D96554 50.41%, #A868DF 97.78% ) 1;
-    background-origin: border-box;
-    background-clip: content-box,border-box;
-    -webkit-background-clip: content-box, border-box;
-}
-
-.more:hover{
-    background: rgb(19, 19, 19);
-}
-
-.more>span{
-    font-size: x-large;
-}
-
 
 .my-img{
     background: linear-gradient(90deg,#D78B43 2.32%, #D96554 50.41%, #A868DF 97.78% );
@@ -184,6 +136,8 @@ body{
     box-shadow: none;
 }
 
+
+
 .text-roll{
     background: linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
     color: white;
@@ -220,4 +174,49 @@ body{
     .break{
         display: none;
     }
+}
+
+
+.marquee{
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    position: relative;
+    user-select: none;
+}
+
+.marquee-content{
+    letter-spacing: .2rem;
+    flex-shrink:0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 1rem;
+}
+
+@keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 1rem));
+    }
+  }
+  
+  .scroll {
+    animation: scroll 10s linear infinite;
+  }
+
+.rounded-corners-gradient-borders {
+    text-decoration: none;
+    color: white;
+    border: solid 2px transparent;
+    border-radius: 15px;
+    background-image: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19)), linear-gradient(90deg, #A868DF 2.32%, #D96554 50.41%, #D78B43 97.78%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.rounded-corners-gradient-borders>span{
+    font-size: x-large;
 }
